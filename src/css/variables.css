@@ -1,0 +1,16 @@
+:root {
+  /* font styles */
+
+  /* text colors */
+  --txt-color-primary: #8c6858;
+  --txt-color-secondary: #000000;
+
+  /* background colors */
+  --bg-color-primary: #efe9e4;
+  --bg-color-secondary: #dcddc1;
+  --bg-color-overlay-secondary: #ffffffc0;
+  --bg-color-overlay: #82828280;
+
+  /* animation */
+  --animations: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
