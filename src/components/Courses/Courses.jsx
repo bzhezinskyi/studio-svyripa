@@ -4,7 +4,7 @@ import coursesList from 'contents/curses.json';
 
 export default function Courses() {
   return (
-    <SC.Container>
+    <SC.Container id="Courses">
       <SC.Title>Курси</SC.Title>
       <SC.ListCard>
         {coursesList.map(item => (

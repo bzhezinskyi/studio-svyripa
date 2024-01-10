@@ -1,4 +1,4 @@
-import * as SC from "./Card.styled";
+import * as SC from './Card.styled';
 
 export default function Card({ details }) {
   console.log(details);
@@ -8,7 +8,7 @@ export default function Card({ details }) {
       <SC.Txt>{details.txt}</SC.Txt>
       <SC.Txt>Тривалість курсу: {details.duration}</SC.Txt>
       <SC.Txt>Вартість: {details.price}</SC.Txt>
-      <SC.Btn>Про курс</SC.Btn>
+      <SC.Btn to={`course/${details.id}`}>Про курс</SC.Btn>
     </SC.Container>
   );
 }

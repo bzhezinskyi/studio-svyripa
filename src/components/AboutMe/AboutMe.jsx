@@ -1,10 +1,10 @@
-import * as SC from "./AboutMe.styled";
+import * as SC from './AboutMe.styled';
 
-import AboutImg from "images/about_me.jpg";
+import AboutImg from 'images/about_me.jpg';
 
 export default function AboutMe() {
   return (
-    <SC.Container>
+    <SC.Container id="AboutMe">
       <SC.Img src={AboutImg} />
       <SC.Box>
         <SC.Title>Про мене</SC.Title>

@@ -1,6 +1,6 @@
-import Logo from "./Logo/Logo";
+import Logo from './Logo/Logo';
 
-import * as SC from "./Header.styled";
+import * as SC from './Header.styled';
 
 export default function Header() {
   return (
@@ -9,10 +9,10 @@ export default function Header() {
       <SC.NavList>
         <SC.List>
           <SC.Item>
-            <SC.Link>Про мене</SC.Link>
+            <SC.Link href="#AboutMe">Про мене</SC.Link>
           </SC.Item>
           <SC.Item>
-            <SC.Link>Курси</SC.Link>
+            <SC.Link href="#Courses">Курси</SC.Link>
           </SC.Item>
           <SC.Item>
             <SC.Link>Запис на послуги</SC.Link>

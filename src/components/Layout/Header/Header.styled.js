@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   position: fixed;
@@ -22,4 +22,5 @@ export const Item = styled.li`
 `;
 export const Link = styled.a`
   text-transform: uppercase;
+  cursor: pointer;
 `;
