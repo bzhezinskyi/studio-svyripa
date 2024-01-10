@@ -7,7 +7,6 @@ import MobileMenu from './Header/MobileMenu/MobileMenu';
 import * as SC from './Layout.styled';
 
 export default function Layout() {
-  const body = document.querySelector('body');
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const togleMenu = () => {
