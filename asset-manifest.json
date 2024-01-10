@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/studio-svyripa/static/css/main.7acaea2f.css",
-    "main.js": "/studio-svyripa/static/js/main.07d3183d.js",
+    "main.css": "/studio-svyripa/static/css/main.375abc35.css",
+    "main.js": "/studio-svyripa/static/js/main.b89dab47.js",
+    "static/media/hero.jpg": "/studio-svyripa/static/media/hero.2ab1d8e6d206142d212b.jpg",
+    "static/media/about_me.jpg": "/studio-svyripa/static/media/about_me.c3a41bd4eb7d5e4e9333.jpg",
+    "static/media/logo-2.png": "/studio-svyripa/static/media/logo-2.5c778558afb9476dbb43.png",
     "index.html": "/studio-svyripa/index.html",
-    "main.7acaea2f.css.map": "/studio-svyripa/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/studio-svyripa/static/js/main.07d3183d.js.map"
+    "main.375abc35.css.map": "/studio-svyripa/static/css/main.375abc35.css.map",
+    "main.b89dab47.js.map": "/studio-svyripa/static/js/main.b89dab47.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.375abc35.css",
+    "static/js/main.b89dab47.js"
   ]
 }
