@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
@@ -18,4 +18,13 @@ export const Container = styled.div`
     margin: 10px auto;
     width: 1024px;
   }
+`;
+
+export const Overlay = styled.div`
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  background-color: var(--bg-color-overlay);
 `;

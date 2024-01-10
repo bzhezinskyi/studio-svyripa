@@ -9,18 +9,8 @@ export const Container = styled.div`
 
   width: 100%;
   height: 50px;
-`;
-export const NavList = styled.nav``;
-export const List = styled.ul`
-  display: flex;
-`;
-export const Item = styled.li`
-  margin-right: 15px;
-  &:last-child {
-    margin-right: 0;
+
+  @media screen and (max-width: 425px) {
+    justify-content: space-between;
   }
-`;
-export const Link = styled.a`
-  text-transform: uppercase;
-  cursor: pointer;
 `;

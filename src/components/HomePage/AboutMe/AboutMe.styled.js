@@ -1,27 +1,23 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  box-sizing: border-box;
-  padding-top: 100px;
-  height: 623px;
+  @media screen and (min-width: 426px) {
+    display: flex;
+  }
 `;
-
 export const Box = styled.div``;
-
-export const Title = styled.h1`
+export const Title = styled.h2`
   margin-bottom: 24px;
+  text-align: center;
 
   color: var(--txt-color-primary);
   font-size: 96px;
 `;
-
 export const Txt = styled.p`
-  text-align: center;
   color: var(--txt-color-secondary);
-  text-transform: uppercase;
+  font-size: 32px;
 `;
-
 export const Img = styled.img`
   border-radius: 250px 250px 0 0;
+  width: 348px;
 `;

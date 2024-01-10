@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router';
 
 import Layout from 'components/Layout/Layout';
 import HomePage from 'pages/HomePage';
-import CoursePage from 'pages/Course/CoursePage';
+import CoursePage from 'pages/CoursePage';
 
 export default function App() {
   return (

@@ -7,7 +7,7 @@ export const Container = styled.div`
 
   box-sizing: border-box;
 
-  width: 480px;
+  /* width: 480px; */
 
   padding: 25px;
 
