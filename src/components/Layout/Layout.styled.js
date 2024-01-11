@@ -20,10 +20,10 @@ export const Container = styled.div`
 `;
 
 export const Overlay = styled.div`
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   background-color: var(--bg-color-overlay);
 `;

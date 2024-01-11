@@ -31,11 +31,11 @@ export const Title = styled.h1`
     margin-bottom: 8px;
   }
   @media screen and (min-width: 426px) and (max-width: 767px) {
-    font-size: 68px;
+    font-size: 60px;
     margin-bottom: 16px;
   }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
-    font-size: 68px;
+    font-size: 64px;
     margin-bottom: 24px;
   }
   @media screen and (min-width: 1024px) {
