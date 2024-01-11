@@ -3,14 +3,20 @@ import styled from 'styled-components';
 import { IoMenu, IoClose } from 'react-icons/io5';
 
 export const Container = styled.div`
-  @media screen and (max-width: 425px) {
+  @media screen and (min-width: 426px) {
     display: none;
   }
 `;
 
-export const MobileContainer = styled.div`
-  @media screen and (min-width: 426px) {
-    display: none;
+export const MenuContainer = styled.div`
+  @media screen and (max-width: 425px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    width: 300px;
+    background-color: var(--bg-color-primary);
   }
 `;
 

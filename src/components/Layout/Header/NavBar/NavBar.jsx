@@ -1,9 +1,8 @@
 import * as SC from './NavBar.styled';
 
-export default function NavBar({ children }) {
+export default function NavBar() {
   return (
-    <SC.Contaner>
-      {children}
+    <>
       <SC.NavList>
         <SC.List>
           <SC.Item>
@@ -17,6 +16,6 @@ export default function NavBar({ children }) {
           </SC.Item>
         </SC.List>
       </SC.NavList>
-    </SC.Contaner>
+    </>
   );
 }

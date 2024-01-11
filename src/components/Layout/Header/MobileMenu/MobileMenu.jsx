@@ -4,14 +4,15 @@ import NavBar from '../NavBar/NavBar';
 export default function MobileMenu({ isOpenMenu, togleMenu }) {
   return (
     <>
-      <SC.MobileContainer>
+      <SC.Container>
         {isOpenMenu ? (
           <>
-            <NavBar>
+            <SC.MenuContainer>
               <SC.MenuBtn onClick={togleMenu}>
                 <SC.CloseIcon />
               </SC.MenuBtn>
-            </NavBar>
+              <NavBar />
+            </SC.MenuContainer>
           </>
         ) : (
           <>
@@ -20,7 +21,7 @@ export default function MobileMenu({ isOpenMenu, togleMenu }) {
             </SC.MenuBtn>
           </>
         )}
-      </SC.MobileContainer>
+      </SC.Container>
     </>
   );
 }

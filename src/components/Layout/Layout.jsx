@@ -18,7 +18,6 @@ export default function Layout() {
       <SC.Container>
         <Header />
         <Outlet />
-
         <MobileMenu isOpenMenu={isOpenMenu} togleMenu={togleMenu} />
         {isOpenMenu && <SC.Overlay onClick={togleMenu} />}
       </SC.Container>
