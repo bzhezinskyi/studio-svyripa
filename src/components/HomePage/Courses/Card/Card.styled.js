@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   display: inline-block;
-  position: relative;
+  /* position: relative; */
 
   box-sizing: border-box;
 
@@ -30,11 +30,12 @@ export const Title = styled.h3`
 export const Txt = styled.p`
   text-align: start;
 `;
+export const Box = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 export const Btn = styled(Link)`
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
   padding: 16px;
 
   border: var(--border-primary);

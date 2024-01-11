@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   height: 50px;
   width: 100%;
-  background-color: var(--bg-color-overlay);
+  background-color: var(--bg-color-overlay-secondary);
 
   @media screen and (max-width: 425px) {
     justify-content: space-between;
