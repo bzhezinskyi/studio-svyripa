@@ -5,7 +5,6 @@ import AboutImg from 'images/about_me.jpg';
 export default function AboutMe() {
   return (
     <SC.Container id="AboutMe">
-      <SC.Img src={AboutImg} />
       <SC.Box>
         <SC.Title>Про мене</SC.Title>
         <SC.Txt>
@@ -15,9 +14,10 @@ export default function AboutMe() {
           <br /> Відпиляла більше 3000 клієнтів.
           <br /> Вклала у своє навчання близько 50 тис. грн.
           <br /> Навчаю секретів у нігтьовій професії.
-          <br /> Закохаю тебе у професію майстра манікюрк
+          <br /> Закохаю тебе у професію майстра манікюру.
         </SC.Txt>
       </SC.Box>
+      <SC.Img src={AboutImg} />
     </SC.Container>
   );
 }
