@@ -27,7 +27,7 @@ export const Box = styled.div`
 export const Title = styled.h1`
   color: var(--txt-color-primary);
   @media screen and (max-width: 425px) {
-    font-size: 60px;
+    font-size: 48px;
     margin-bottom: 8px;
   }
   @media screen and (min-width: 426px) and (max-width: 767px) {
