@@ -5,12 +5,23 @@ export const List = styled.ul`
   @media screen and (min-width: 426px) {
     display: flex;
   }
+
+  @media screen and (max-width: 425px) {
+    padding-top: 50px;
+    padding-left: 10px;
+  }
 `;
 export const Item = styled.li`
   @media screen and (min-width: 426px) {
     margin-right: 15px;
     &:last-child {
       margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    padding-bottom: 15px;
+    &:last-child {
+      padding-bottom: 0;
     }
   }
 `;

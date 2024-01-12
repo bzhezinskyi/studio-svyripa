@@ -11,7 +11,7 @@ export default function MobileMenu({ isOpenMenu, togleMenu }) {
               <SC.MenuBtn onClick={togleMenu}>
                 <SC.CloseIcon />
               </SC.MenuBtn>
-              <NavBar />
+              <NavBar togleMenu={togleMenu} />
             </SC.MenuContainer>
           </>
         ) : (

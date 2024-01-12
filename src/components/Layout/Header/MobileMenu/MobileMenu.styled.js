@@ -9,22 +9,22 @@ export const Container = styled.div`
 `;
 
 export const MenuContainer = styled.div`
-  @media screen and (max-width: 425px) {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    height: 100%;
-    width: 300px;
-    background-color: var(--bg-color-primary);
-  }
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  width: 300px;
+  background-color: var(--bg-color-primary);
 `;
 
 export const MenuBtn = styled.button`
   position: fixed;
   top: 5px;
   right: 5px;
+
   border: none;
+  background-color: inherit;
 `;
 export const MenuIcon = styled(IoMenu)`
   width: 30px;
