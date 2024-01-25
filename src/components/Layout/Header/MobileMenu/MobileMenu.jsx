@@ -5,22 +5,13 @@ export default function MobileMenu({ isOpenMenu, togleMenu }) {
   return (
     <>
       <SC.Container>
-        {isOpenMenu ? (
-          <>
-            <SC.MenuContainer>
-              <SC.MenuBtn onClick={togleMenu}>
-                <SC.CloseIcon />
-              </SC.MenuBtn>
-              <NavBar togleMenu={togleMenu} />
-            </SC.MenuContainer>
-          </>
-        ) : (
-          <>
-            <SC.MenuBtn onClick={togleMenu}>
-              <SC.MenuIcon />
-            </SC.MenuBtn>
-          </>
-        )}
+        <SC.MenuContainer className={isOpenMenu || 'hidden'}>
+          <SC.MenuBtn onClick={togleMenu}>
+            <SC.CloseIcon className={isOpenMenu || 'hidden'} />
+            <SC.MenuIcon className={isOpenMenu || 'hidden'} />
+          </SC.MenuBtn>
+          <NavBar togleMenu={togleMenu} />
+        </SC.MenuContainer>
       </SC.Container>
     </>
   );

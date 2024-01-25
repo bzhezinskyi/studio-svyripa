@@ -21,9 +21,16 @@ export const Container = styled.div`
 
 export const Overlay = styled.div`
   position: fixed;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 100%;
+
   background-color: var(--bg-color-overlay);
+
+  transition: var(--animations);
+  &.hidden {
+    top: -100%;
+  }
 `;
