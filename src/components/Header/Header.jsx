@@ -20,13 +20,15 @@ export default function Header({ navList }) {
     <>
       <SC.Container>
         <SC.NavContainer>
-          <SC.NavList>
-            {navList.map(i => (
-              <SC.NavItem key={i.name}>
-                <SC.NavLink href={i.href}>{i.name}</SC.NavLink>
-              </SC.NavItem>
-            ))}
-          </SC.NavList>
+          {navList && (
+            <SC.NavList>
+              {navList.map(i => (
+                <SC.NavItem key={i.name}>
+                  <SC.NavLink href={i.href}>{i.name}</SC.NavLink>
+                </SC.NavItem>
+              ))}
+            </SC.NavList>
+          )}
         </SC.NavContainer>
       </SC.Container>
 
@@ -35,15 +37,17 @@ export default function Header({ navList }) {
           <SC.CloseIcon className={isOpenMobileMenu || 'hidden'} />
           <SC.MenuIcon className={isOpenMobileMenu || 'hidden'} />
         </SC.MenuBtn>
-        <SC.NavList>
-          {navList.map(i => (
-            <SC.NavItem key={i.name}>
-              <SC.NavLink href={i.href} onClick={closeMenu}>
-                {i.name}
-              </SC.NavLink>
-            </SC.NavItem>
-          ))}
-        </SC.NavList>
+        {navList && (
+          <SC.NavList>
+            {navList.map(i => (
+              <SC.NavItem key={i.name}>
+                <SC.NavLink href={i.href} onClick={closeMenu}>
+                  {i.name}
+                </SC.NavLink>
+              </SC.NavItem>
+            ))}
+          </SC.NavList>
+        )}
       </SC.MenuContainer>
 
       <SC.Overlay
