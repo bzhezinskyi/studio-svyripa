@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { IoMenu, IoClose } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   position: fixed;
@@ -117,4 +118,16 @@ export const Overlay = styled.div`
   @media screen and (min-width: 426px) {
     display: none;
   }
+`;
+
+export const LogoLink = styled(Link)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+  display: inline-block;
+`;
+export const LogoIcon = styled.img`
+  width: 100px;
 `;

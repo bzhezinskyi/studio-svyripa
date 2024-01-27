@@ -4,10 +4,8 @@ import * as SC from './Layout.styled';
 
 export default function Layout() {
   return (
-    <>
-      <SC.Container>
-        <Outlet />
-      </SC.Container>
-    </>
+    <SC.Container>
+      <Outlet />
+    </SC.Container>
   );
 }

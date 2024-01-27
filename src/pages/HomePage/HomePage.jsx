@@ -1,7 +1,7 @@
 import Hero from 'components/HomePage/Hero/Hero';
 import AboutMe from 'components/HomePage/AboutMe/AboutMe';
 import Courses from 'components/HomePage/Courses/Courses';
-import Header from 'components/Layout/Header/Header';
+import Header from 'components/Header/Header';
 
 const nav = [
   { href: '#AboutMe', name: 'Про мене' },

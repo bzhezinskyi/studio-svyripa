@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
-import Logo from './Logo/Logo';
+import logoIcon from 'images/logo-2.png';
+
 import * as SC from './Header.styled';
 
 export default function Header({ navList }) {
@@ -50,7 +51,9 @@ export default function Header({ navList }) {
         className={isOpenMobileMenu || 'hidden'}
       />
 
-      <Logo />
+      <SC.LogoLink to="/">
+        <SC.LogoIcon src={logoIcon} />
+      </SC.LogoLink>
     </>
   );
 }
