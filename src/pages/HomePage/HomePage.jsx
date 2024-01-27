@@ -8,10 +8,7 @@ import coursesList from 'contents/curses.json';
 const nav = [
   { href: '#AboutMe', name: 'Про мене' },
   { href: '#Courses', name: 'Курси' },
-  {
-    href: 'https://widget.easyweek.io/svyripa-nails/63873',
-    name: 'Запис на послуги',
-  },
+  { href: '#Contacts', name: 'Контакти' },
 ];
 
 export default function HomePage() {
@@ -29,6 +26,7 @@ export default function HomePage() {
         </SC.Box>
         <SC.Img src={HeroImg} />
       </SC.Section>
+
       <SC.Section id="AboutMe">
         <SC.Box>
           <SC.Title>Про мене</SC.Title>
@@ -44,6 +42,7 @@ export default function HomePage() {
         </SC.Box>
         <SC.Img src={AboutImg} />
       </SC.Section>
+
       <SC.Container id="Courses">
         <SC.Title>Курси</SC.Title>
         <SC.CardList>
@@ -76,20 +75,41 @@ export default function HomePage() {
           )}
         </SC.CardList>
       </SC.Container>
-      <SC.Container>
+
+      <SC.Container id="Contacts">
         <SC.Title>Контакти</SC.Title>
-        <SC.ContactLinl href="https://www.instagram.com/svyripa_nails">
-          <SC.InstagramIcon />
-        </SC.ContactLinl>
-        <SC.ContactLinl>
-          <SC.TelegramIcon />
-        </SC.ContactLinl>
-        <SC.ContactLinl>
-          <SC.PhoneIcon />
-        </SC.ContactLinl>
-        <SC.ContactLinl href="https://maps.app.goo.gl">
-          <SC.MapIcon />
-        </SC.ContactLinl>
+        <SC.ContactList>
+          <SC.ContactItem>
+            <SC.ContactLink href="https://www.instagram.com">
+              <SC.InstagramIcon />
+              <SC.ContactTxt>Svyripa_nails</SC.ContactTxt>
+            </SC.ContactLink>
+          </SC.ContactItem>
+          <SC.ContactItem>
+            <SC.ContactLink>
+              <SC.TelegramIcon />
+              <SC.ContactTxt></SC.ContactTxt>
+            </SC.ContactLink>
+          </SC.ContactItem>
+          <SC.ContactItem>
+            <SC.ContactLink href="tel:+380667470833">
+              <SC.PhoneIcon />
+              <SC.ContactTxt>+380 66 747 0833</SC.ContactTxt>
+            </SC.ContactLink>
+          </SC.ContactItem>
+          <SC.ContactItem>
+            <SC.ContactLink href="https://maps.app.goo.gl/8mELKRtgBqCrJuzu5">
+              <SC.MapIcon />
+              <SC.ContactTxt>м.Луцьк вул.Крилова 1</SC.ContactTxt>
+            </SC.ContactLink>
+          </SC.ContactItem>
+          <SC.ContactItem>
+            <SC.ContactLink href="https://widget.easyweek.io/svyripa-nails/63873">
+              <SC.PenIcon />
+              <SC.ContactTxt>Запис на послуги</SC.ContactTxt>
+            </SC.ContactLink>
+          </SC.ContactItem>
+        </SC.ContactList>
       </SC.Container>
     </>
   );

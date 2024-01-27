@@ -5,6 +5,7 @@ import {
   PiTelegramLogo,
   PiPhone,
   PiMapPin,
+  PiPen,
 } from 'react-icons/pi';
 
 export const Section = styled.div`
@@ -163,7 +164,23 @@ export const CardBtn = styled(Link)`
   background-color: var(--bg-color-btn);
 `;
 
-export const ContactLinl = styled.a``;
+export const ContactList = styled.ul`
+  text-align: start;
+`;
+export const ContactItem = styled.li`
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+`;
+export const ContactLink = styled.a`
+  display: flex;
+  align-items: center;
+`;
+
+export const ContactTxt = styled.span`
+  margin-left: 12px;
+`;
 export const InstagramIcon = styled(PiInstagramLogo)`
   width: 30px;
   height: 30px;
@@ -177,6 +194,10 @@ export const PhoneIcon = styled(PiPhone)`
   height: 30px;
 `;
 export const MapIcon = styled(PiMapPin)`
+  width: 30px;
+  height: 30px;
+`;
+export const PenIcon = styled(PiPen)`
   width: 30px;
   height: 30px;
 `;
