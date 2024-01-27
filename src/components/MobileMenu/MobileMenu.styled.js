@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { IoMenu, IoClose } from 'react-icons/io5';
 
 export const Container = styled.div`
@@ -16,6 +15,7 @@ export const MenuContainer = styled.div`
 
   text-align: center;
   width: 100%;
+  min-height: 100px;
   background-color: var(--bg-color-primary);
 
   transition: var(--animations);
@@ -49,4 +49,49 @@ export const CloseIcon = styled(IoClose)`
     width: 0;
     height: 0;
   }
+`;
+
+export const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 120%;
+
+  background-color: var(--bg-color-overlay);
+
+  transition: var(--animations);
+  &.hidden {
+    top: -120%;
+  }
+`;
+
+export const List = styled.ul`
+  @media screen and (min-width: 426px) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 50px 0;
+  }
+`;
+export const Item = styled.li`
+  @media screen and (min-width: 426px) {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    padding-bottom: 15px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+`;
+
+export const Link = styled.a`
+  text-transform: uppercase;
+  cursor: pointer;
 `;

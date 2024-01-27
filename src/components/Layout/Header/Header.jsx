@@ -1,13 +1,56 @@
-import * as SC from './Header.styled';
-import NavBar from './NavBar/NavBar';
+import { useState } from 'react';
 
-export default function Header({ children }) {
+import Logo from './Logo/Logo';
+import * as SC from './Header.styled';
+
+export default function Header({ navList }) {
+  const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
+
+  const closeMenu = () => {
+    return setIsOpenMobileMenu(false);
+  };
+  const togleMenu = () => {
+    return isOpenMobileMenu
+      ? setIsOpenMobileMenu(false)
+      : setIsOpenMobileMenu(true);
+  };
+
   return (
-    <SC.Container>
-      <SC.NavContainer>
-        <NavBar />
-      </SC.NavContainer>
-      {children}
-    </SC.Container>
+    <>
+      <SC.Container>
+        <SC.NavContainer>
+          <SC.NavList>
+            {navList.map(i => (
+              <SC.NavItem key={i.name}>
+                <SC.NavLink href={i.href}>{i.name}</SC.NavLink>
+              </SC.NavItem>
+            ))}
+          </SC.NavList>
+        </SC.NavContainer>
+      </SC.Container>
+
+      <SC.MenuContainer className={isOpenMobileMenu || 'hidden'}>
+        <SC.MenuBtn onClick={togleMenu}>
+          <SC.CloseIcon className={isOpenMobileMenu || 'hidden'} />
+          <SC.MenuIcon className={isOpenMobileMenu || 'hidden'} />
+        </SC.MenuBtn>
+        <SC.NavList>
+          {navList.map(i => (
+            <SC.NavItem key={i.name}>
+              <SC.NavLink href={i.href} onClick={closeMenu}>
+                {i.name}
+              </SC.NavLink>
+            </SC.NavItem>
+          ))}
+        </SC.NavList>
+      </SC.MenuContainer>
+
+      <SC.Overlay
+        onClick={closeMenu}
+        className={isOpenMobileMenu || 'hidden'}
+      />
+
+      <Logo />
+    </>
   );
 }

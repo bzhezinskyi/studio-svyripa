@@ -7,8 +7,7 @@ export const List = styled.ul`
   }
 
   @media screen and (max-width: 425px) {
-    padding-top: 50px;
-    padding-left: 10px;
+    padding: 50px 0;
   }
 `;
 export const Item = styled.li`

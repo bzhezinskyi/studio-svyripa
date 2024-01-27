@@ -8,8 +8,8 @@ export default function Courses() {
       <SC.Title>Курси</SC.Title>
       <SC.ListCard>
         {coursesList.map(item => (
-          <SC.Item>
-            <Card key={item.id} details={item} />
+          <SC.Item key={item.id}>
+            <Card details={item} />
           </SC.Item>
         ))}
       </SC.ListCard>
