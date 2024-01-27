@@ -1,7 +1,6 @@
 import Hero from 'components/HomePage/Hero/Hero';
 import AboutMe from 'components/HomePage/AboutMe/AboutMe';
 import Courses from 'components/HomePage/Courses/Courses';
-import MobileMenu from 'components/MobileMenu/MobileMenu';
 import Header from 'components/Layout/Header/Header';
 
 const nav = [
@@ -20,7 +19,6 @@ export default function HomePage() {
       <Hero />
       <AboutMe />
       <Courses />
-      {/* <MobileMenu>{nav}</MobileMenu> */}
     </>
   );
 }
