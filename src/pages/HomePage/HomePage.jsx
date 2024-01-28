@@ -5,6 +5,7 @@ import HeroImg from 'images/hero.jpg';
 import AboutImg from 'images/about_me.jpg';
 
 import coursesList from 'contents/curses.json';
+import Footer from 'components/Footer/Footer';
 const nav = [
   { href: '#AboutMe', name: 'Про мене' },
   { href: '#Courses', name: 'Курси' },
@@ -15,6 +16,7 @@ export default function HomePage() {
   return (
     <>
       <Header navList={nav} />
+
       <SC.Section>
         <SC.Box>
           <SC.Title>
@@ -76,41 +78,7 @@ export default function HomePage() {
         </SC.CardList>
       </SC.Container>
 
-      <SC.Container id="Contacts">
-        <SC.Title>Контакти</SC.Title>
-        <SC.ContactList>
-          <SC.ContactItem>
-            <SC.ContactLink href="https://www.instagram.com">
-              <SC.InstagramIcon />
-              <SC.ContactTxt>Svyripa_nails</SC.ContactTxt>
-            </SC.ContactLink>
-          </SC.ContactItem>
-          <SC.ContactItem>
-            <SC.ContactLink>
-              <SC.TelegramIcon />
-              <SC.ContactTxt></SC.ContactTxt>
-            </SC.ContactLink>
-          </SC.ContactItem>
-          <SC.ContactItem>
-            <SC.ContactLink href="tel:+380667470833">
-              <SC.PhoneIcon />
-              <SC.ContactTxt>+380 66 747 0833</SC.ContactTxt>
-            </SC.ContactLink>
-          </SC.ContactItem>
-          <SC.ContactItem>
-            <SC.ContactLink href="https://maps.app.goo.gl/8mELKRtgBqCrJuzu5">
-              <SC.MapIcon />
-              <SC.ContactTxt>м.Луцьк вул.Крилова 1</SC.ContactTxt>
-            </SC.ContactLink>
-          </SC.ContactItem>
-          <SC.ContactItem>
-            <SC.ContactLink href="https://widget.easyweek.io/svyripa-nails/63873">
-              <SC.PenIcon />
-              <SC.ContactTxt>Запис на послуги</SC.ContactTxt>
-            </SC.ContactLink>
-          </SC.ContactItem>
-        </SC.ContactList>
-      </SC.Container>
+      <Footer />
     </>
   );
 }

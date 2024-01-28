@@ -5,6 +5,7 @@ import Header from 'components/Header/Header';
 import * as SC from './CoursePage.styled';
 
 import coursesList from 'contents/curses.json';
+import Footer from 'components/Footer/Footer';
 
 export default function CoursePage() {
   const { id } = useParams();
@@ -30,6 +31,7 @@ export default function CoursePage() {
         <SC.Txt>{duration}</SC.Txt>
         <SC.Txt>{price}</SC.Txt>
       </SC.Container>
+      <Footer />
     </>
   );
 }

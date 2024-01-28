@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import {
-  PiInstagramLogo,
-  PiTelegramLogo,
-  PiPhone,
-  PiMapPin,
-  PiPen,
-} from 'react-icons/pi';
 
 export const Section = styled.div`
   padding-top: 50px;
@@ -162,42 +155,4 @@ export const CardBtn = styled(Link)`
   border-radius: 15px;
 
   background-color: var(--bg-color-btn);
-`;
-
-export const ContactList = styled.ul`
-  text-align: start;
-`;
-export const ContactItem = styled.li`
-  margin-bottom: 8px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-`;
-export const ContactLink = styled.a`
-  display: flex;
-  align-items: center;
-`;
-
-export const ContactTxt = styled.span`
-  margin-left: 12px;
-`;
-export const InstagramIcon = styled(PiInstagramLogo)`
-  width: 30px;
-  height: 30px;
-`;
-export const TelegramIcon = styled(PiTelegramLogo)`
-  width: 30px;
-  height: 30px;
-`;
-export const PhoneIcon = styled(PiPhone)`
-  width: 30px;
-  height: 30px;
-`;
-export const MapIcon = styled(PiMapPin)`
-  width: 30px;
-  height: 30px;
-`;
-export const PenIcon = styled(PiPen)`
-  width: 30px;
-  height: 30px;
 `;
